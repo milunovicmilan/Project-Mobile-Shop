@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { useState } from "react";
-import Logo from "../Assets/Logo.svg";
+import Logo from "../Assets/Logo.png";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -12,38 +13,56 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
+import NewspaperIcon from '@mui/icons-material/Newspaper';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import EmailIcon from '@mui/icons-material/Email';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+
+
+
+
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+   const handleSignInClick = () => {
+    const signInFormElement = document.querySelector('.sign-in-form-wrapper');
+    if (signInFormElement) {
+      signInFormElement.scrollIntoView({ behavior: 'smooth' });
+    }
+
+  
+  };
   const menuOptions = [
     {
       text: "Home",
       icon: <HomeIcon />,
     },
     {
-      text: "About",
+      text: "Newcomer",
       icon: <InfoIcon />,
     },
     {
-      text: "Testimonials",
-      icon: <CommentRoundedIcon />,
+      text: "Breaking news",
+      icon: <NewspaperIcon />,
+    },
+    {
+      text: "About us",
+      icon: <EmailIcon />,
     },
     {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
     },
     {
-      text: "Cart",
-      icon: <ShoppingCartRoundedIcon />,
+      text: "Sign in",
+      icon: <AssignmentIcon />,
     },
   ];
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+      <img src={Logo} alt="Logo" style={{ height: '60px', marginRight: '20px', verticalAlign: 'middle' }} />
+      <span>FC Barcelona Fans</span>
       </div>
       <div className="navbar-links-container">
         <a href="">Home</a>
@@ -51,7 +70,7 @@ const Navbar = () => {
         <a href="">Breaking news</a>
         <a href="">About us</a>
         <a href="">Contact</a>
-        <button className="primary-button">Sign in</button>
+        <button className="primary-button" onClick={handleSignInClick}>Sign in</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

@@ -321,7 +321,7 @@ nav {
 }
 @media (max-width: 800px) {
   .nav-logo-container {
-    max-width: 140px;
+    max-width: 150px;
   }
   .navbar-links-container {
     display: none;
@@ -425,4 +425,5 @@ nav {
   .about-background-image-container {
     display: none;
   }
+  
 }

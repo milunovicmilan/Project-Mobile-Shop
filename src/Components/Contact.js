@@ -1,4 +1,6 @@
+
 import React from "react";
+import SignInForm from './SignInForm';
 
 const Contact = () => {
   return (
@@ -9,8 +11,10 @@ const Contact = () => {
         <input type="text" placeholder="yourmail@gmail.com" />
         <button className="secondary-button">Submit</button>
       </div>
+      <SignInForm />
     </div>
   );
 };
 
 export default Contact;
+

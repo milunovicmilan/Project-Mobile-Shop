@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
+import PlayerInfoLewandowski from "./PlayerInfoLewandowski";
+
 
 const Home = () => {
+  const [showPlayerInfo, setShowPlayerInfo] = useState(false);
+
+  const handleReadMoreClick = () => {
+    setShowPlayerInfo(!showPlayerInfo); 
+  };
+
   return (
+    
+
     <div className="home-container">
       <Navbar />
       <div className="home-banner-container">
@@ -21,15 +31,17 @@ const Home = () => {
           The striker from Poland stands out for his goalscoring abilities. Inside the box he has all the tools to make him a difficult striker to read as he can find the net with his head and both feet with equal precision. 
           
           </p>
-          <button className="secondary-button">
+          <button className="secondary-button" onClick={handleReadMoreClick}>
             Read more <FiArrowRight />{" "}
           </button>
+          {showPlayerInfo && <PlayerInfoLewandowski />}
         </div>
         <div className="home-image-section">
           <img src={BannerImage} alt="" />
         </div>
       </div>
     </div>
+   
   );
 };
 

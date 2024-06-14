@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Right Media Components</title>
+    
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <!-- Include jQuery Validation plugin -->
+       <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Custom CSS for gallery-->
+         
+<style>
+    .thumbnail {
+        cursor: pointer;
+    }
+</style>
+    </head>
+    
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Right Media Components</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" id="all-products-link">All Products</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#" id="best-sale-button">Best Sale</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="button" id="cart-button">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart-count">0</span>
+                    </button>
+                </form>
+                <div class="navbar">
+                    <div class="navbar-items">
+                        <button id="increase-font">A+</button>
+                        <button id="decrease-font">A-</button>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+    </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Shop in style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Choose us!</p>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder">Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question btn btn-primary custom-btn d-flex align-items-center justify-content-between">
+                        What is the return policy?
+                    </button>
+                    <div class="faq-answer" style="display: none;">
+                        <p>You can return any item within 30 days of purchase.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question btn btn-primary custom-btn d-flex align-items-center justify-content-between">
+                        How do I track my order?
+                    </button>
+                    <div class="faq-answer" style="display: none;">
+                        <p>You will receive a tracking link via email once your order has been shipped.</p>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </section>
+        <section class="py-5">
+            <div id="products-section" class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="thumbnail" src="assets/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium.jpg" alt="Thumbnail 1" data-image="assets/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium.jpg" data-description="Description of the image goes here" />
+
+            
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone 15 Pro Max 256GB Natural Titanium</h5>
+                                    <!-- Product price-->
+                                    $959.99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto view-options-btn-pro-max">View options</button></div><br>
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto btn-add-to-cart">Add to Cart</button></div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Best Sale!</div>
+                            <!-- Product image-->
+                            <img class="thumbnail" src="assets/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium.jpg" alt="Thumbnail 1" data-image="assets/iphone-15-pro-finish-select-202309-6-1inch-blacktitanium.jpg" />
+
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone 15 Pro 256GB Black Titanium</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$849.99</span>
+                                    $639.99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto view-options-btn-pro">View options</button></div><br>
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto btn-add-to-cart">Add to Cart</button></div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Best Sale!</div>
+                            <!-- Product image-->
+                            <img class="thumbnail" src="assets/iphone-15-finish-select-202309-6-7inch-black.jpg" alt="Thumbnail 1" data-image="assets/iphone-15-finish-select-202309-6-7inch-black.jpg" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone 15 Plus 512GB Black Titanium</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$739.99</span>
+                                    $529.99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto view-options-btn-plus">View options</button></div><br>
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto btn-add-to-cart">Add to Cart</button></div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="thumbnail" src="assets/iphone-15-storage-select-202309-6-1inch-black.webp" alt="Thumbnail 1" data-image="assets/iphone-15-storage-select-202309-6-1inch-black.webp" />
+
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone 15 256GB Black Titanium</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $549.99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto view-options-btn">View options</button></div><br>
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto btn-add-to-cart">Add to Cart</button></div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Best Sale!</div>
+                            <!-- Product image-->
+                            <img class="thumbnail" src="assets/iphone-14-finish-select-202209-6-7inch_AV1.webp" alt="Thumbnail 1" data-image="assets/iphone-14-finish-select-202209-6-7inch_AV1.webp" />
+
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone 14 Plus 128GB Blue</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">539.99</span>
+                                    $479.99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto view-options-btn-14plus">View options</button></div><br>
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto btn-add-to-cart">Add to Cart</button></div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="thumbnail" src="assets/iphone-14-finish-select-202209-6-1inch_AV1.webp" alt="Thumbnail 1" data-image="assets/iphone-14-finish-select-202209-6-1inch_AV1.webp" />
+
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone 14 128GB Blue</h5>
+                    
+                                    <!-- Product price-->
+                                    $459.99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto view-options-btn-14">View options</button></div><br>
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto btn-add-to-cart">Add to Cart</button></div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Best Sale!</div>
+                            <!-- Product image-->
+                            <img class="thumbnail" src="assets/iphone-13-finish-select-202207-midnight.webp" alt="Thumbnail 1" data-image="assets/iphone-13-finish-select-202207-midnight.webp" />
+
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone 13 128GB Black</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$489.99</span>
+                                    $409.99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto view-options-btn-13">View options</button></div><br>
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto btn-add-to-cart">Add to Cart</button></div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="thumbnail" src="assets/iphone-se-finish-unselect-gallery-2-202207.webp" alt="Thumbnail 1" data-image="assets/iphone-se-finish-unselect-gallery-2-202207.webp" />
+
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">iPhone SE 64GB White</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $189.99
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto view-options-btn-se">View options</button></div><br>
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto btn-add-to-cart">Add to Cart</button></div><br>
+                            </div>
+                        </div>
+                    </div>
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid" id="modalImage" src="" alt="Modal Image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for iPhone 15 Pro Options -->
+            <div class="modal fade" id="phoneOptionsModalPro" tabindex="-1" aria-labelledby="phoneOptionsModalLabelPro" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneOptionsModalLabelPro">iPhone 15 Pro</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Specifications:</strong></p>
+                            <ul>
+                                <li>Display: 6.1-inch Super Retina XDR</li>
+                                <li>Processor: A15 Bionic chip</li>
+                                <li>Camera: Triple 12MP cameras with Night mode</li>
+                                <li>Storage: 128GB, 256GB, 512GB, 1TB</li>
+                                <li>Battery Life: Up to 25 hours talk time</li>
+                                <li>Water Resistance: IP68</li>
+                            </ul>
+                            <p><strong>Price:</strong> $639.99</p>
+                            <p><strong>Description:</strong> The iPhone 15 Pro offers a stunning display, powerful performance, and an advanced camera system to capture every moment with incredible detail. With multiple storage options and impressive battery life, it's designed to meet all your needs.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for iPhone 15 Pro Max Options -->
+            <div class="modal fade" id="phoneOptionsModalProMax" tabindex="-1" aria-labelledby="phoneOptionsModalLabelProMax" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneOptionsModalLabelProMax">iPhone 15 Pro Max</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Specifications:</strong></p>
+                            <ul>
+                                <li>Display: 6.7-inch Super Retina XDR</li>
+                                <li>Processor: A15 Bionic chip</li>
+                                <li>Camera: Triple 12MP cameras with Night mode</li>
+                                <li>Storage: 128GB, 256GB, 512GB, 1TB</li>
+                                <li>Battery Life: Up to 28 hours talk time</li>
+                                <li>Water Resistance: IP68</li>
+                            </ul>
+                            <p><strong>Price:</strong> $959.99</p>
+                            <p><strong>Description:</strong> The iPhone 15 Pro Max offers a stunning display, powerful performance, and an advanced camera system to capture every moment with incredible detail. With multiple storage options and impressive battery life, it's designed to meet all your needs.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for iPhone 15 Plus Options -->
+            <div class="modal fade" id="phoneOptionsModalPlus" tabindex="-1" aria-labelledby="phoneOptionsModalLabelPlus" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneOptionsModalLabelPlus">iPhone 15 Plus</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Specifications:</strong></p>
+                            <ul>
+                                <li>Display: 6.7-inch Super Retina XDR</li>
+                                <li>Processor: A15 Bionic chip</li>
+                                <li>Camera: Dual 12MP cameras with Night mode</li>
+                                <li>Storage: 128GB, 256GB, 512GB</li>
+                                <li>Battery Life: Up to 26 hours talk time</li>
+                                <li>Water Resistance: IP68</li>
+                            </ul>
+                            <p><strong>Price:</strong> $529.99</p>
+                            <p><strong>Description:</strong> The iPhone 15 Plus offers a large display, powerful performance, and an advanced camera system. With multiple storage options and impressive battery life, it's designed to meet all your needs.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for iPhone 15 Options -->
+            <div class="modal fade" id="phoneOptionsModal" tabindex="-1" aria-labelledby="phoneOptionsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneOptionsModalLabel">iPhone 15</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Specifications:</strong></p>
+                            <ul>
+                                <li>Display: 6.1-inch Super Retina XDR</li>
+                                <li>Processor: A15 Bionic chip</li>
+                                <li>Camera: Dual 12MP cameras with Night mode</li>
+                                <li>Storage: 128GB, 256GB</li>
+                                <li>Battery Life: Up to 20 hours talk time</li>
+                                <li>Water Resistance: IP68</li>
+                            </ul>
+                            <p><strong>Price:</strong> $549.99</p>
+                            <p><strong>Description:</strong> The iPhone 15 offers a stunning display, powerful performance, and an advanced camera system to capture every moment with incredible detail. With multiple storage options and impressive battery life, it's designed to meet all your needs.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for iPhone 14 Plus Options -->
+            <div class="modal fade" id="phoneOptionsModal14Plus" tabindex="-1" aria-labelledby="phoneOptionsModalLabel14Plus" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneOptionsModalLabel14Plus">iPhone 14 Plus</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Specifications:</strong></p>
+                            <ul>
+                                <li>Display: 6.7-inch Super Retina XDR</li>
+                                <li>Processor: A15 Bionic chip</li>
+                                <li>Camera: Dual 12MP cameras with Night mode</li>
+                                <li>Storage: 128GB, 256GB, 512GB</li>
+                                <li>Battery Life: Up to 26 hours talk time</li>
+                                <li>Water Resistance: IP68</li>
+                            </ul>
+                            <p><strong>Price:</strong> $479.99</p>
+                            <p><strong>Description:</strong> The iPhone 14 Plus offers a large display, powerful performance, and an advanced camera system. With multiple storage options and impressive battery life, it's designed to meet all your needs.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for iPhone 14 Options -->
+            <div class="modal fade" id="phoneOptionsModal14" tabindex="-1" aria-labelledby="phoneOptionsModalLabel14" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneOptionsModalLabel14">iPhone 14</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Specifications:</strong></p>
+                            <ul>
+                                <li>Display: 6.1-inch Super Retina XDR</li>
+                                <li>Processor: A15 Bionic chip</li>
+                                <li>Camera: Dual 12MP cameras with Night mode</li>
+                                <li>Storage: 128GB, 256GB</li>
+                                <li>Battery Life: Up to 20 hours talk time</li>
+                                <li>Water Resistance: IP68</li>
+                            </ul>
+                            <p><strong>Price:</strong> $459.99</p>
+                            <p><strong>Description:</strong> The iPhone 14 offers a stunning display, powerful performance, and an advanced camera system to capture every moment with incredible detail. With multiple storage options and impressive battery life, it's designed to meet all your needs.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for iPhone 13 Options -->
+            <div class="modal fade" id="phoneOptionsModal13" tabindex="-1" aria-labelledby="phoneOptionsModalLabel13" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneOptionsModalLabel13">iPhone 13</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Specifications:</strong></p>
+                            <ul>
+                                <li>Display: 6.1-inch Super Retina XDR</li>
+                                <li>Processor: A15 Bionic chip</li>
+                                <li>Camera: Dual 12MP cameras with Night mode</li>
+                                <li>Storage: 128GB, 256GB, 512GB</li>
+                                <li>Battery Life: Up to 19 hours talk time</li>
+                                <li>Water Resistance: IP68</li>
+                            </ul>
+                            <p><strong>Price:</strong> $409.99</p>
+                            <p><strong>Description:</strong> The iPhone 13 offers a powerful performance, and an advanced camera system to capture every moment with incredible detail. With multiple storage options and impressive battery life, it's designed to meet all your needs.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for iPhone SE Options -->
+            <div class="modal fade" id="phoneOptionsModalSE" tabindex="-1" aria-labelledby="phoneOptionsModalLabelSE" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneOptionsModalLabelSE">iPhone SE</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Specifications:</strong></p>
+                            <ul>
+                                <li>Display: 4.7-inch Retina HD</li>
+                                <li>Processor: A13 Bionic chip</li>
+                                <li>Camera: 12MP camera with Portrait mode</li>
+                                <li>Storage: 64GB, 128GB, 256GB</li>
+                                <li>Battery Life: Up to 13 hours talk time</li>
+                                <li>Water Resistance: IP67</li>
+                            </ul>
+                            <p><strong>Price:</strong> $189.99</p>
+                            <p><strong>Description:</strong> The iPhone SE offers a compact design, powerful performance, and a great camera system. It's designed to meet all your needs at an affordable price.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Modal for Adding to Cart -->
+        <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addToCartModalLabel">Add to Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addToCartForm">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                                </small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cardNumber" class="form-label">Card Number</label>
+                                <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Expiration date</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Right Media Components 2024</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Custom JS for gallery-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // JavaScript code here
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get all thumbnail images
+                const thumbnails = document.querySelectorAll(".thumbnail");
+                thumbnails.forEach((thumbnail) => {
+                    // Add click event listener to each thumbnail
+                    thumbnail.addEventListener("click", function () {
+                        // Get the larger image URL from data attribute
+                        const imageURL = this.getAttribute("data-image");
+                        // Set the larger image URL to modal image source
+                        document.getElementById("modalImage").src = imageURL;
+                        // Show the modal
+                        const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+                        modal.show();
+                    });
+                });
+            });
+        </script>
+        
+        
+    </body>
+</html>
